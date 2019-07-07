@@ -1,14 +1,3 @@
-var image = document.getElementsByClassName('one');
-new simpleParallax(image, {
-  scale: 1.6,
-  orientation: 'right',
-});
-var image = document.getElementsByClassName('two');
-new simpleParallax(image, {
-  scale: 1.6,
-  orientation: ' down right',
-    overflow: true
-});
 var image = document.getElementsByClassName('three');
 new simpleParallax(image, {
   scale: 1.9,
@@ -19,12 +8,11 @@ new simpleParallax(image, {
 });
 var image = document.getElementsByClassName('four');
 new simpleParallax(image, {
-  scale: 1.6,
-  orientation: 'right'
+  scale: 1.2,
 });
 var image = document.getElementsByClassName('five');
 new simpleParallax(image, {
-  scale: 1.6,
+  scale: 1.5,
   orientation: 'left'
 });
 var image = document.getElementsByClassName('six');
