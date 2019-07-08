@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -18,6 +19,15 @@ body {
   font-family: 'Work Sans', sans-serif;
   width: 100%;
   height: 100%;
+  overflow: hidden;
+  transition: 3s;
+  -webkit-animation: lightSpeedIn 2s;
+  animation: lightSpeedIn 2s;
+}
+
+.newbody {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
 }
 
 h1 {
@@ -34,35 +44,35 @@ img {
   height: 50vh;
 }
 
-.text{
+.text {
   padding-top: 50px;
 }
 
-.three{
+.three {
   overflow-y: hidden;
 }
 
-.wrapper{
+.wrapper {
   width: 50%;
   background-color: #e9e9eb;
 }
 
-#main{
+#main {
   position: absolute;
   right: 5%;
   top: 60%;
 }
 
-#main h1{
+#main h1 {
   font-size: 80px;
 }
 
-#main p{
-  color:#ffffff;
+#main p {
+  color: #ffffff;
   font-size: 50px
 }
 
-#enter{
+#enter {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -70,13 +80,9 @@ img {
   padding: 20px;
 }
 
-#enter p{
+#enter p {
   color: #f1Db61;
   font-size: 20px;
 }
-
-
-
-
 
 /*Global end*/
