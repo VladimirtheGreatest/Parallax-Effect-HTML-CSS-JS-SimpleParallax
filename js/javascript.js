@@ -28,14 +28,13 @@ new simpleParallax(image, {
 
 // Customer greeting, playing with JavaScript ES6
 class Customer {
-  constructor(firstname, lastname) {
-    this.firstname = firstname;
-    this.lastname = lastname;
-    this.age = getAge();
+  constructor(username, password) {
+    this.username = username;
+    this.password = password;
   }
 
   getName() {
-    return 'Your name is' + ' ' + this.firstname + ' ' + this.lastname + ' ' + 'and you are' + ' ' + this.age + ' ' + 'years old';
+    return 'Your name is' + ' ' + this.username + ' ' + this.password;
   }
 
   getGreetings() {
@@ -43,18 +42,16 @@ class Customer {
   }
 }
 
-const Age = prompt("What is your age"); //change into input
-const getAge = () => Age;
-const UnderAge = (getAge() >= 18)
-  ? 'Hi'
-  : 'Leave';
+const input = () => document.getElementById('userInput').value;
+const input2 = () => document.getElementById('userInput2').value;
 
-const John = new Customer('John', 'Baptist');
-console.log(John.getGreetings());
-console.log(John.getName());
-console.log(UnderAge);
+const Client = new Customer(input(), input2());
+Client.username = input();
+Client.password = input2();
 
 //Event listeners
 
 document.getElementById('entrance').addEventListener("click", open = () => document.getElementById('main').classList.add("newbody"));
+document.getElementById('entrance').addEventListener("click", reveal = () => document.getElementById('form').classList.add("visibleform"));
 window.addEventListener("scroll", welcome = () => document.getElementById('entrance').innerHTML = "Welcome");
+document.getElementById('button').addEventListener("click", greet = () => document.getElementById('greetings').innerHTML = Client.getName());
