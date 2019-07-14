@@ -22,13 +22,17 @@ body {
   overflow: hidden;
 }
 
+.navbar{
+  background: #000000;
+}
+
 .newbody {
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
 }
 
 h1 {
-  font-family: 'Monoton', cursive;
+  font-family: 'Overpass', sans-serif;
   color: #f1Db61;
   font-weight: bolder;
   overflow-y: hidden;
@@ -49,11 +53,16 @@ img {
 
 .three {
   overflow-y: hidden;
+  background-color: #000000;
 }
 
 .wrapper {
   width: 50%;
   background-color: #e9e9eb;
+}
+
+.heading{
+  background-color: #000000;
 }
 
 /*left section with parallax images end */
@@ -124,3 +133,5 @@ input[type=text], input[type=password] {
 }
 
 /*enter fixed button end*/
+
+
