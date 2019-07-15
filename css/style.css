@@ -22,9 +22,49 @@ body {
   overflow: hidden;
 }
 
+/*navbar*/
+
 .navbar{
   background: #000000;
 }
+
+.navbar-brand{
+    color: #f1Db61;
+}
+
+.navbar-brand:hover{
+  -webkit-animation: flash 2s infinite;
+  animation: flash 2s infinite;
+  color: #f1Db61;
+}
+
+.nav-item a{
+    color: #f1Db61;
+    font-size: 18px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.nav-item a:hover{
+    color: #ffffff;
+    -webkit-animation: fadeIn 2s infinite;
+    animation: fadeIn 2s infinite;
+}
+
+#myNav{
+  position: absolute;
+  right: 0;
+}
+
+#myNav ul li {
+  padding: 0px 10px;
+}
+
+.navbar-toggler{
+  color: #f1Db61;
+}
+
+/*navbar end*/
 
 .newbody {
   -webkit-animation: pulse 2s infinite;
@@ -32,12 +72,13 @@ body {
 }
 
 h1 {
-  font-family: 'Overpass', sans-serif;
+  font-family: 'Anton', sans-serif;
   color: #f1Db61;
   font-weight: bolder;
   overflow-y: hidden;
   position: relative;
   overflow: hidden;
+  text-transform: capitalize;
 }
 
 /*global end */
@@ -53,7 +94,7 @@ img {
 
 .three {
   overflow-y: hidden;
-  background-color: #000000;
+  background-color: #e0d9d3;
 }
 
 .wrapper {
@@ -63,6 +104,10 @@ img {
 
 .heading{
   background-color: #000000;
+}
+
+.two{
+    background-color: #e0d9d3;
 }
 
 /*left section with parallax images end */
@@ -133,5 +178,3 @@ input[type=text], input[type=password] {
 }
 
 /*enter fixed button end*/
-
-
