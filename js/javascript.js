@@ -1,5 +1,12 @@
 //Simple parallax
-
+var image = document.getElementsByClassName('two');
+new simpleParallax(image, {
+  scale: 1.9,
+  overflow: true,
+  orientation: ' down left',
+  delay: 3.6,
+  transition: 'cubic-bezier(0,0,0,1)'
+});
 var image = document.getElementsByClassName('three');
 new simpleParallax(image, {
   scale: 1.9,
