@@ -12,10 +12,6 @@ a {
 }
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)), url(../bg3.jpg) no-repeat 50% 50%;
-  background-size: cover;
-  background-attachment: fixed;
   font-family: 'Work Sans', sans-serif;
   width: 100%;
   height: 100%;
@@ -25,21 +21,21 @@ body {
 /*navbar*/
 
 .navbar{
-  background: #000000;
+  background: #eb46b4;
 }
 
 .navbar-brand{
-    color: #f1Db61;
+    color: #b4eb46;
 }
 
 .navbar-brand:hover{
   -webkit-animation: flash 2s infinite;
   animation: flash 2s infinite;
-  color: #f1Db61;
+  color: #b4eb46;
 }
 
 .nav-item a{
-    color: #f1Db61;
+    color: #b4eb46;
     font-size: 18px;
     font-weight: bolder;
     letter-spacing: 1px;
@@ -73,7 +69,7 @@ body {
 
 h1 {
   font-family: 'Anton', sans-serif;
-  color: #f1Db61;
+  color: #000000;
   font-weight: bolder;
   overflow-y: hidden;
   position: relative;
@@ -94,20 +90,28 @@ img {
 
 .three {
   overflow-y: hidden;
-  background-color: #e0d9d3;
+  background-color: #46b4eb;
 }
 
 .wrapper {
   width: 50%;
-  background-color: #e9e9eb;
+  background-color: #46b4eb;
 }
 
 .heading{
-  background-color: #000000;
+  background-color: #46b4eb;
 }
 
 .two{
-    background-color: #e0d9d3;
+    background-color: #46b4eb;
+}
+
+.fruit{
+  flex: 50%;
+}
+
+.coffee{
+  flex: 50%;
 }
 
 /*left section with parallax images end */
@@ -115,7 +119,7 @@ img {
 #main {
   position: absolute;
   right: 5%;
-  top: 55%;
+  top: 25%;
   text-align: center;
 }
 
@@ -124,17 +128,26 @@ img {
 }
 
 #main p {
-  color: #ffffff;
+  color: #000000;
   font-size: 50px
 }
+
+/*first banner*/
+#banner{
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 100%;
+}
+/*first banner end */
 
 /*heading end*/
 /*form*/
 form {
   position: absolute;
   right: 15%;
-  top: 80%;
-  color: #f1Db61;
+  top: 55%;
+  color: #000000;
   font-family: 'Work Sans', sans-serif;
   text-align: center;
   display: none;
@@ -152,14 +165,20 @@ input[type=text], input[type=password] {
   padding: 12px 20px;
   display: inline-block;
   box-sizing: border-box;
+  background-color: #46b4eb;
+  color: #f1Db61;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 #button{
   padding: 10px 15px;
-  background-color: #000000;
+  background-color: #46b4eb;
   color: #f1Db61;
   border: none;
   border-radius: 20%;
+  font-weight: bolder;
+  font-size: 18px;
 }
 
 /*form end*/
