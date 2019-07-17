@@ -16,38 +16,41 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 /*navbar*/
-
-.navbar{
+.navbar {
   background: #eb46b4;
 }
 
-.navbar-brand{
-    color: #b4eb46;
+.navbar-brand {
+  color: #b4eb46;
 }
 
-.navbar-brand:hover{
+.navbar-brand:hover {
   -webkit-animation: flash 2s infinite;
   animation: flash 2s infinite;
   color: #b4eb46;
 }
 
-.nav-item a{
-    color: #b4eb46;
-    font-size: 18px;
-    font-weight: bolder;
-    letter-spacing: 1px;
+.nav-item a {
+  color: #b4eb46;
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 1px;
 }
 
-.nav-item a:hover{
-    color: #ffffff;
-    -webkit-animation: fadeIn 2s infinite;
-    animation: fadeIn 2s infinite;
+.nav-item a:hover {
+  color: #ffffff;
+  -webkit-animation: fadeIn 2s infinite;
+  animation: fadeIn 2s infinite;
 }
 
-#myNav{
+#myNav {
   position: absolute;
   right: 0;
 }
@@ -56,12 +59,11 @@ body {
   padding: 0px 10px;
 }
 
-.navbar-toggler{
+.navbar-toggler {
   color: #f1Db61;
 }
 
 /*navbar end*/
-
 .newbody {
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
@@ -84,42 +86,49 @@ img {
   height: 50vh;
 }
 
-.text {
-  padding-top: 50px;
-}
-
 .three {
   overflow-y: hidden;
   background-color: #46b4eb;
-}
-
-.wrapper {
-  width: 50%;
-  background-color: #46b4eb;
-}
-
-.heading{
-  background-color: #46b4eb;
-}
-
-.two{
-    background-color: #46b4eb;
-}
-
-.fruit{
   flex: 50%;
 }
 
-.coffee{
+.wrapper {
+  flex: 50%;
+  background-color: #46b4eb;
+}
+
+.wrapper1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  background-color: #46b4eb;
+  flex: 50%;
+}
+
+.two {
+  background-color: #46b4eb;
+  flex: 50%;
+}
+
+.sandwich {
+  flex: 50%;
+}
+
+.fruit {
+  flex: 50%;
+}
+
+.coffee {
   flex: 50%;
 }
 
 /*left section with parallax images end */
+
 /*heading*/
 #main {
-  position: absolute;
-  right: 5%;
-  top: 25%;
   text-align: center;
 }
 
@@ -132,21 +141,14 @@ img {
   font-size: 50px
 }
 
-/*first banner*/
-#banner{
-  width: 50%;
-  position: absolute;
-  right: 0;
-  top: 100%;
+.info {
+  text-align: center;
 }
-/*first banner end */
 
 /*heading end*/
+
 /*form*/
 form {
-  position: absolute;
-  right: 15%;
-  top: 55%;
   color: #000000;
   font-family: 'Work Sans', sans-serif;
   text-align: center;
@@ -161,7 +163,7 @@ form {
 
 /* Full-width inputs */
 input[type=text], input[type=password] {
-  width: 100%;
+  width: 70%;
   padding: 12px 20px;
   display: inline-block;
   box-sizing: border-box;
@@ -171,7 +173,7 @@ input[type=text], input[type=password] {
   font-size: 18px;
 }
 
-#button{
+#button {
   padding: 10px 15px;
   background-color: #46b4eb;
   color: #f1Db61;
